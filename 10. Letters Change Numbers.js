@@ -13,19 +13,19 @@ function lettersChangeNumbers(input) {
     let positionFirst = letterFirst.charCodeAt(0) - `a`.charCodeAt(0) + 1;
     let positionLast = letterLast.charCodeAt(0) - `a`.charCodeAt(0) + 1;
 
-    if (first === first.toUpperCase()) {
+  if (first === first.toUpperCase()) {
       num = num / positionFirst;
     } else {
       num = num * positionFirst;
     }
 
-    if (last === last.toUpperCase()) {
+  if (last === last.toUpperCase()) {
       num = num - positionLast;
     } else {
       num += positionLast;
     }
-    newArr.push(num);
+newArr.push(num);
   }
-  console.log(newArr.reduce((a, b) => a + b).toFixed(2));
+console.log(newArr.reduce((a, b) => a + b).toFixed(2));
 }
 lettersChangeNumbers('P34562Z q2576f H456z');
